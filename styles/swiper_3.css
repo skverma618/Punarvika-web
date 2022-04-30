@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(90deg, #6d43a0 0%, #d5369e 70%, #a200ff);
+  color: white;
+  overflow: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+}
+
+.navbar .menu i {
+  font-size: 24px;
+  padding-right: 20px;
+}
+.navbar .media li {
+  display: inline-block;
+  padding-left: 30px;
+}
+.navbar .media li a {
+  color: white;
+  font-size: 24px;
+}
+.logo {
+  font-size: 36px;
+}
+
+.swiper-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper-slide {
+  width: 800px;
+  height: 500px;
+  /* background-color: #4787ed; */
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  background-position: 50%;
+  background-size: cover;
+}
+.swiper-slide:nth-child(1) .slide-img {
+  background-image: url(../img/filo_left.jpg);
+}
+.swiper-slide:nth-child(2) .slide-img {
+  background-image: url(../img/filo_fronty.jpg);
+}
+.swiper-slide:nth-child(3) .slide-img {
+  background-image: url(../img/filo_right.jpg);
+}
+.swiper-slide:nth-child(4) .slide-img {
+  background-image: url(../img/filo_left.jpg);
+}
+.swiper-slide:nth-child(5) .slide-img {
+  background-image: url(../img/filo_front.jpeg);
+}
+.swiper-slide:nth-child(6) .slide-img {
+  background-image: url(../img/filo_right.jpg);
+}
+
+.slide-number {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+  overflow: hidden;
+}
+.slide-number p {
+  font-size: 48px;
+  font-family: "poppins", sans-serif;
+  position: relative;
+  color: white;
+}
+.slide-text {
+  width: 250px;
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.slide-text h4 {
+  font-size: 52px;
+  font-family: "poppins", sans-serif;
+  position: relative;
+  color: white;
+}
+.slide-number p span {
+  position: absolute;
+}
+
+.slide-text h4 span {
+  position: absolute;
+}
+
+.c-gallery__slider-wrapper {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  padding: 0;
+  height: 85vh;
+  margin-top: 7.5vh;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+.slider_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.slide {
+  width: 470px;
+  margin-right: 120px;
+  position: relative;
+  width: 33.33333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  cursor: grab;
+}
+
+.three_pics {
+  transition-duration: 0ms;
+  transform: translate3d(0%, 0px, 0px);
+  display: block;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  left: 168%;
+  animation: moving 1.6s forwards;
+  animation-delay: 1s;
+}
+
+@media (max-width: 1140px) {
+  .three_pics {
+    width: 320px;
+  }
+}
+.slider_img,
+.slide_img_bg {
+  background-size: cover;
+  background-position: 50%;
+}
+
+.slider_img {
+  position: relative;
+  z-index: 2;
+  height: 0;
+  text-indent: -9999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 133.33333%;
+}
+.front_div,
+.slide_img_bg {
+  transition: transform 0.8s cubic-bezier(0.46, 0.03, 0.52, 0.96),
+    -webkit-transform 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  will-change: transform;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.slide_img_bg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.front_pic {
+  background-image: url(../img/filo_front.jpeg);
+}
+
+.inner_s_img {
+  width: 70%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  padding-bottom: 91.42857%;
+}
+.left_div {
+  display: block;
+  right: 40%;
+  bottom: 20%;
+  -webkit-transform: translateX(50%) rotate(0deg);
+  transform: translateX(50%) rotate(0deg);
+  animation: left 1.6s forwards;
+  animation-delay: 1s;
+}
+.right_div {
+  display: block;
+  left: -20%;
+  bottom: 20%;
+  -webkit-transform: translateX(50%) rotate(0deg);
+  transform: translateX(50%) rotate(0deg);
+  /* animation: right 1.6s forwards;
+  animation-delay: 1s; */
+}
+.left_pic {
+  background-image: url(../img/filo_left.jpg);
+}
+.right_pic {
+  background-image: url(../img/filo_right.jpg);
+}
+
+@media (min-width: 1400px) {
+  .slide {
+    width: 520px;
+  }
+}
+/* 
+@keyframes right {
+  0% {
+    left: -20%;
+  }
+  40% {
+    left: 50%;
+  }
+  60% {
+    left: 50%;
+  }
+  100% {
+    left: 36%;
+  }
+} */
+@keyframes left {
+  0% {
+    right: 40%;
+  }
+  40% {
+    right: 100%;
+  }
+  60% {
+    right: 100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes moving {
+  0% {
+    left: 168%;
+  }
+  40% {
+    left: 66%;
+  }
+  60% {
+    left: 66%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+/* 
+  .three_pics {
+    display: flex;
+    position: relative;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: 100vh;
+    /* transform: translate(0, -50%); */
+/* }
+  .front_pic {
+    position: absolute;
+    width: 40vw;
+    z-index: 100;
+  }
+  .right_pic {
+    position: absolute;
+    left: 50%;
+    width: 30vw;
+  }
+  .left_pic {
+    position: absolute;
+    right: 50%;
+    width: 30vw;
+  }  */

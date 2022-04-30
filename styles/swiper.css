@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(90deg, #6d43a0 0%, #d5369e 70%, #a200ff);
+  color: white;
+  overflow: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+}
+
+.navbar .menu i {
+  font-size: 24px;
+  padding-right: 20px;
+}
+.navbar .media li {
+  display: inline-block;
+  padding-left: 30px;
+}
+.navbar .media li a {
+  color: white;
+  font-size: 24px;
+}
+.logo {
+  font-size: 36px;
+}
+
+.swiper-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper-slide {
+  width: 800px;
+  height: 500px;
+  /* background-color: #4787ed; */
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  background-position: 50%;
+  background-size: cover;
+}
+.swiper-slide:nth-child(1) .slide-img {
+  background-image: url(../img/filo_left.jpg);
+}
+.swiper-slide:nth-child(2) .slide-img {
+  background-image: url(../img/filo_fronty.jpg);
+}
+.swiper-slide:nth-child(3) .slide-img {
+  background-image: url(../img/filo_right.jpg);
+}
+.swiper-slide:nth-child(4) .slide-img {
+  background-image: url(../img/filo_left.jpg);
+}
+.swiper-slide:nth-child(5) .slide-img {
+  background-image: url(../img/filo_front.jpeg);
+}
+.swiper-slide:nth-child(6) .slide-img {
+  background-image: url(../img/filo_right.jpg);
+}
+
+.slide-number {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+  overflow: hidden;
+}
+.slide-number p {
+  font-size: 48px;
+  font-family: "poppins", sans-serif;
+  position: relative;
+  color: white;
+}
+.slide-text {
+  width: 250px;
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.slide-text h4 {
+  font-size: 52px;
+  font-family: "poppins", sans-serif;
+  position: relative;
+  color: white;
+}
+.slide-number p span {
+  position: absolute;
+}
+
+.slide-text h4 span {
+  position: absolute;
+}
