@@ -1,2 +1,2 @@
-# Punarvika-web
+# Punarvika's-web
 A repository of all the new ideas and trials for Punarvika's website
